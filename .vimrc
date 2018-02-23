@@ -137,9 +137,9 @@ colors badwolf
 set guifont=Lucida_Console:h11
 
 " Set the backup, swap file, and undo file directories
-set backupdir=C:\Users\adamt\Vim\backups
-set directory=C:\Users\adamt\Vim\swap
-set undodir=C:\Users\adamt\Vim\undo
+set backupdir=$HOME\Vim\backups
+set directory=$HOME\Vim\swap
+set undodir=$HOME\Vim\undo
 
 " Change the number of characters in an indent
 set tabstop=4
