@@ -18,6 +18,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/TwitVim'
+Plugin 'sjl/badwolf'
+Plugin 'junegunn/goyo.vim'
+Plugin 'reedes/vim-colors-pencil'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -152,3 +157,22 @@ syntax on
 set autoindent
 
 :command Nt NERDTree
+
+" Move into new color scheme when using :Goyo
+function! s:goyo_enter()
+    colorscheme pencil
+endfunction
+
+function! s:goyo_leave()
+    colorscheme badwolf
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+
+" Indent guides visual update
+let g:indent_guides_guide_size = 1
+let g:indent_guides_color_change_percent = 3
+let g:indent_guides_enable_on_vim_startup = 1
+
+set encoding=utf-8
