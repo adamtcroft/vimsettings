@@ -16,6 +16,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-scripts/TwitVim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -148,3 +150,5 @@ set shiftwidth=4
 syntax on
 
 set autoindent
+
+:command Nt NERDTree
