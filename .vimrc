@@ -23,6 +23,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'reedes/vim-colors-pencil'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-syntastic/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
